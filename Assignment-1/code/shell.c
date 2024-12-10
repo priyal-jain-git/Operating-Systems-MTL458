@@ -10,7 +10,7 @@
 #define MAX_ARGS 100            // Maximum number of arguments for a command
 
 
-// Greeting shell interface on starting, commented to avoid test script failure
+// Greeting shell interface on starting
 void init_shell()
 {
     printf("\n\t************************************************************\n");
@@ -272,9 +272,9 @@ void execute_piped_commands(char* input) {
 // Main function
 int main() {
 
-    //initialising interface for commands, commented to avoid test script failure
+    //initialising interface for commands, comment to avoid test script failure
 
-    // init_shell();
+    init_shell();
 
     char input[MAX_INPUT_LENGTH];
     while (1) {
